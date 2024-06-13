@@ -1,0 +1,18 @@
+The URL you've mentioned, http://admsjava-jaymala.ctpl.in:9094/application/default, is likely a request made to a Spring Cloud Config Server instance. Let's break down the URL:
+
+http://: 	This specifies the protocol used for the request, in this case, HTTP.
+
+admsjava-jaymala.ctpl.in: 	This is the hostname of the server where the Spring Cloud Config Server is hosted.
+ It's possible that "admsjava-jaymala.ctpl.in" is the domain name or hostname of your server.
+ 
+9094: 	This is the port number on which the Spring Cloud Config Server is running. 
+In this case, it's running on port 9094.
+
+/application/default: 	This is the endpoint on the Config Server that is being accessed. In a Spring Cloud Config Server, 
+the /application part is usually a placeholder for the application name, and default refers to the default profile. 
+This endpoint typically returns the configuration properties for the specified application (application) and profile (default).
+
+So, when you hit http://admsjava-jaymala.ctpl.in:9094/application/default, 
+you are requesting the configuration properties for the application named application and the default profile.
+ These properties are typically stored in a Git repository or some other backend, and 
+ the Config Server retrieves them and serves them to clients (such as your Spring Boot application) upon request.
